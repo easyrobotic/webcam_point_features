@@ -2,9 +2,9 @@
 see in  [ORB](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_orb/py_orb.html)
 
 ## ORB Definition:
-###ORB: Oriented Fast and Rotated BRIEF
+### ORB: Oriented Fast and Rotated BRIEF
 
-ORB is a feature detection and description, basically it's a fusion between a corner detection [FAST](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_fast/py_fast.html) and [BRIEF](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_brief/py_brief.html() descriptor with many modifications  to enhance the performance.
+ORB is a feature detection and description, basically it's a fusion between a corner detection [FAST](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_fast/py_fast.html) and [BRIEF](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_brief/py_brief.html) descriptor with many modifications  to enhance the performance.
 First it use FAST algorithm to find keypoints, then it applies Harris corner measure to find top N points among them and it also use pyramid to produce multiscale-features.
 As FAST doesn't compute the orientation, the algorithm computes the intensity weighted centroid of the patch with located corner at center. The direction of the vector from this corner point to centroid gives the orientation and computes moments with x and y. Then, BRIEF descriptors are used according to the orientation of keypoints.
 
@@ -33,5 +33,6 @@ It obtains the following images:
 
 ## Run the code
 
-1. Make a new file named build
+1. Make a new directory named build
 2. go to build and execute *cmake ..* and then *make*.
+3. Run file *./point_features* - (you have a webcam installed).
