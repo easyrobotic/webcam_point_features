@@ -16,10 +16,10 @@ The paper says ORB is much faster than SURF and SIFT and ORB descriptor works be
 
 There are the following functions:
 
-1. orb_base(input image, keypoints to compute, detector to compute, descriptor to compute) -> is the base ORB feature detection function.
-2. orb_base_mask(input image, keypoints to compute,detector to compute, descriptor to compute, mask rectangle x,mask rectangle y, mask rectangle width, mask rectangle height) -> is the base ORB feature detection function computed to a mask.
-3. FastFeatureDetector(input image, keypoints to compute) -> keypoint detector based on FAST corner detection.
-4. BriskDetector(input image, keypoints to compute, descriptor to compute) -> keypoint detector based on Brisk and description extractor
+1. **orb_base**(input image, keypoints to compute, detector to compute, descriptor to compute) -> is the base ORB feature detection function.
+2. **orb_base_mask**(input image, keypoints to compute,detector to compute, descriptor to compute, mask rectangle x,mask rectangle y, mask rectangle width, mask rectangle height) -> is the base ORB feature detection function computed to a mask.
+3. **FastFeatureDetector**(input image, keypoints to compute) -> keypoint detector based on FAST corner detection.
+4. **BriskDetector**(input image, keypoints to compute, descriptor to compute) -> keypoint detector based on Brisk and description extractor
 
 ### Output
 
